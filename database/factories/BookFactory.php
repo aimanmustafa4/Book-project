@@ -21,8 +21,8 @@ class BookFactory extends Factory
             'Book_name'=>$this ->faker->word,
             'Author'=>$this ->faker->name,
             'Book_review'=>$this ->faker->paragraph,
-            'pages'=>$this ->faker->numberBetween(100-500),
-            'price'=>$this ->faker->numberBetween(100-200),
+            'pages'=>$this ->faker->numberBetween(100,500),
+            'price'=>$this ->faker->numberBetween(100,200),
         ];
     }
 }
